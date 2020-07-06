@@ -1,0 +1,33 @@
+[2019-10-05 12:38:09] [INFO ] [cn.ycsin.web.WebApplication:50] -- Starting WebApplication on WIN-F6NANLMT9O9 with PID 22240 (I:\dev_java2019\demos\spring_cloud\web_demo\target\classes started by Administrator in I:\dev_java2019\demos\spring_cloud)
+[2019-10-05 12:38:09] [INFO ] [cn.ycsin.web.WebApplication:652] -- The following profiles are active: prod
+[2019-10-05 12:38:10] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] -- Tomcat initialized with port(s): 80 (http)
+[2019-10-05 12:38:10] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:173] -- Initializing ProtocolHandler ["http-nio-80"]
+[2019-10-05 12:38:10] [INFO ] [org.apache.catalina.core.StandardService:173] -- Starting service [Tomcat]
+[2019-10-05 12:38:10] [INFO ] [org.apache.catalina.core.StandardEngine:173] -- Starting Servlet engine: [Apache Tomcat/9.0.26]
+[2019-10-05 12:38:10] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] -- Initializing Spring embedded WebApplicationContext
+[2019-10-05 12:38:10] [INFO ] [org.springframework.web.context.ContextLoader:284] -- Root WebApplicationContext: initialization completed in 1199 ms
+[2019-10-05 12:38:10] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] -- Initializing ExecutorService 'applicationTaskExecutor'
+[2019-10-05 12:38:10] [INFO ] [org.apache.coyote.http11.Http11NioProtocol:173] -- Starting ProtocolHandler ["http-nio-80"]
+[2019-10-05 12:38:10] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:202] -- Tomcat started on port(s): 80 (http) with context path ''
+[2019-10-05 12:38:10] [INFO ] [cn.ycsin.web.WebApplication:59] -- Started WebApplication in 2.414 seconds (JVM running for 4.194)
+[2019-10-05 12:39:12] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2019-10-05 12:39:12] [INFO ] [org.springframework.web.servlet.DispatcherServlet:525] -- Initializing Servlet 'dispatcherServlet'
+[2019-10-05 12:39:12] [INFO ] [org.springframework.web.servlet.DispatcherServlet:547] -- Completed initialization in 6 ms
+[2019-10-05 12:39:12] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:12] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:26] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:26] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:26] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:26] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:26] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:26] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:27] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:27] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:27] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:27] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:27] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:27] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:27] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:27] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]
+[2019-10-05 12:39:28] [INFO ] [cn.ycsin.web.API.WelcomeAPI:14] -- [biz]logInfo
+[2019-10-05 12:39:28] [WARN ] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] -- Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.lang.Object]

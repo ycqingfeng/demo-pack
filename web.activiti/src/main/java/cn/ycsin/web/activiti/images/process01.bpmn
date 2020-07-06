@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="process01" name="测试01" isExecutable="true">
+    <startEvent id="startEvent"></startEvent>
+    <userTask id="task1" name="节点01" activiti:candidateGroups="candidateGroup1"></userTask>
+    <exclusiveGateway id="createExclusiveGateway1"></exclusiveGateway>
+    <userTask id="task2" name="节点02" activiti:candidateGroups="candidateGroup2"></userTask>
+    <exclusiveGateway id="createExclusiveGateway2"></exclusiveGateway>
+    <userTask id="task3" name="节点03" activiti:candidateGroups="candidateGroup3"></userTask>
+    <exclusiveGateway id="createExclusiveGateway3"></exclusiveGateway>
+    <userTask id="task4" name="节点04" activiti:candidateGroups="candidateGroup4"></userTask>
+    <endEvent id="endEvent"></endEvent>
+    <sequenceFlow sourceRef="startEvent" targetRef="task1"></sequenceFlow>
+    <sequenceFlow sourceRef="task1" targetRef="task2"></sequenceFlow>
+    <sequenceFlow sourceRef="task2" targetRef="createExclusiveGateway1"></sequenceFlow>
+    <sequenceFlow name="不通过" sourceRef="createExclusiveGateway1" targetRef="task1">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='2'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow name="通过" sourceRef="createExclusiveGateway1" targetRef="task3">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='1'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow sourceRef="task3" targetRef="createExclusiveGateway2"></sequenceFlow>
+    <sequenceFlow name="不通过" sourceRef="createExclusiveGateway2" targetRef="task2">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='2'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow name="通过" sourceRef="createExclusiveGateway2" targetRef="task4">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='1'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow sourceRef="task4" targetRef="createExclusiveGateway3"></sequenceFlow>
+    <sequenceFlow name="不通过" sourceRef="createExclusiveGateway3" targetRef="task3">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='2'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow name="通过" sourceRef="createExclusiveGateway3" targetRef="endEvent">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${pass=='1'}]]></conditionExpression>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_process01">
+    <bpmndi:BPMNPlane bpmnElement="process01" id="BPMNPlane_process01"></bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

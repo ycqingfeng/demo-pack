@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="centerEureka" />
+        <module name="client.demo" />
+        <module name="elastic.job.demo" />
+        <module name="engine.tag.api" />
+        <module name="engine.tag.core" />
+        <module name="logger-detective-kafka" />
+        <module name="providerdemo" />
+        <module name="stock" />
+        <module name="web.activiti" />
+        <module name="web_demo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

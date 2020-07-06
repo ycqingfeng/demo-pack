@@ -1,0 +1,15 @@
+server:
+  port: 4321
+
+spring:
+  application:
+    name: client-demo
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9876/eureka/
+
+debug: true
+
+

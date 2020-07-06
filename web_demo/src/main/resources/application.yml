@@ -1,0 +1,4 @@
+web:
+  application:
+    name: web-application
+
